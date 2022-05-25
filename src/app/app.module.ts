@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app/app.component';
 import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
+import {NewModuleModule} from './new-module/new-module.module'
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { MyNewComponentComponent } from './my-new-component/my-new-component.com
     MyNewComponentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NewModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
